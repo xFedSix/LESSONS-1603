@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    /* устраняем появляющейся отступ */
+    font-size: 0px;
+}
+a {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    font-size: 50px;
+    color: white;
+    /* выравневает ссылки по центру */
+    line-height: 200px;
+}

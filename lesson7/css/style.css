@@ -1,0 +1,97 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(252, 242, 221);
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    padding: 40px 0;
+    /* 40px - верхний и нижний, 0 - левый и правый */
+}
+/* стандартное позиционирование */
+/* h1 {
+    position: static;
+} */
+.block-1 p {
+    margin-bottom: 20px;
+    background-color: rgba(187, 182, 182, 0.61);
+}
+p.element-2 {
+    width: 250px;
+    background-color: yellowgreen;
+    /* не выбивает из потока. добавляются новые свойства. left, top, right, botton */
+    position: relative;
+    top: -50px;
+    z-index: -1;
+}
+.element-2 span {
+    background-color: red;
+    font-size: 20px;
+    /* выпадает из потока. стоится относительно родителя не static элемента */
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+p.element-4 {
+    width: 250px;
+    background-color: rgb(72, 102, 12);
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+p.element-6 {
+    width: 50px;
+    height: 50px;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    background-color: rgba(143, 36, 36, 0.527);
+    /* выподает из потока. фиксируется относительно окна браузера */
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 50%;
+    /* пальчик при наведении */
+    cursor: pointer;
+}
+.warning {
+    width: 300px;
+    background-color: yellowgreen;
+    padding: 20px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.warning h2 {
+    text-transform: uppercase;
+    text-align: center;
+    color: red;
+}
+.close {
+    background-color: red;
+    border: none;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border-radius: 50%;
+    transform: translate(50%, -50%);
+
+}

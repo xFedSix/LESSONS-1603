@@ -1,0 +1,26 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    width: 800px;
+    }
+nav{
+    width: 400px;
+    margin: auto;
+}
+header{
+    font-family: 'Times New Roman';
+    text-align:center;
+    color: blue;
+    font-size:100px;
+}
+ul{
+    padding: 20px;
+    color: greenyellow;
+    font-size: 20px;
+}
+li{
+    color:blueviolet;
+    font-size: 18px;
+}
+img{
+    padding: 50px;
+}

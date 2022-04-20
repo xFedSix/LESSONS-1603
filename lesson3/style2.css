@@ -1,0 +1,63 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    /* box-siting: contend-box; значение по умолчанию*/
+    box-sizing: border-box;
+    /* вставлять в css обязательно */
+}
+h1 {
+    text-align: center;
+    padding: 40px;
+}
+p{
+    width: 500px;
+    border: 5px dashed black;
+    padding: 15px;
+    margin: auto;
+    color: white;
+    margin-bottom: 10px;
+}
+.first {
+    background-color: blueviolet;
+}
+
+.big-background {
+    background-image: url(../lesson3/images/background.jpg);
+
+}
+
+.small-background {
+    background-image: url(../lesson3/images/backgroundsmall.jpg);
+}
+
+.fourth {
+    
+    background-position: right top;
+}
+.fifth {
+    
+    background-position: 50% 50%;
+}
+.sixth {
+    background-position: 14px 40px;
+    background-repeat: no-repeat;
+    background-color: brown;
+}
+.seven {
+    background-position: 20px 15px;
+    background-repeat: no-repeat;
+
+}
+.eigth {
+    background-size: 60px 60px;
+}
+.ninth, .tenth {
+    background-size: cover; 
+
+}
+.eleven, .twelve {
+    background-size: contain;
+}
+.thirteenth {
+    background-image: linear-gradient(75deg,red, white, blue);
+}

@@ -1,0 +1,26 @@
+.select{
+    font-size: 30px;
+    color: red;
+}
+div.first{
+    /* div с класом first. приорететнее простого first */
+    font-size: 25;
+    color: green;
+}
+.select span{
+    /* все span внутри select*/
+    color: brown;
+    font-size: 25;
+    
+}
+.first{
+    font-size: 20;
+    color: blue;
+}
+.last-block p, span.violet{
+    /* несколько класов через перечесление P, */
+    color: violet;
+}
+div.first.select * {
+    padding-left: 40px;
+}

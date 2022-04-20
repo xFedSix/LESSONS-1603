@@ -1,0 +1,44 @@
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+    background-color: aqua;
+    text-align: center;
+}
+li {
+    display: inline-block;
+    position: relative;
+}
+li:hover {
+    background-color: cornsilk;
+}
+a {
+    display: inline-block;
+    font-size: 20px;
+    text-decoration: none;
+    color: chartreuse;
+    padding: 20px 0;
+    width: 80px;
+}
+/* выподающий список */
+.level1>li:hover .level2 {
+    display: block;
+}
+
+.level2 {
+    display: none;
+    position: absolute;
+}
+.level2>li:hover .level3 {
+    display: block;
+}
+.level3 {
+    /* max-content выравнивает в ряд */
+    width: max-content;
+    display: none;
+    position: absolute;
+    left: 80px;
+    top: 0;
+}

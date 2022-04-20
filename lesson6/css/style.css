@@ -1,0 +1,217 @@
+*, *::before, *::after {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-color: azure;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+.psevdo {
+    padding: 20px 0;
+}
+psevdo__item {
+    padding: 20px;
+}
+.psevdo__title {
+    padding: 20px 0;
+    border-bottom: 2px dashed black;
+    margin-bottom: 20px;
+}
+.psevdo__subtitle {
+    margin-bottom: 10px;
+}
+.hover-block {
+    display: inline-block;
+    padding: 40px;
+    background-color: brown;
+}
+.hover-block__link {
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+}
+.hover-block__link:hover {
+    /* исчезает но можно кликнуть */
+    opacity: 0; 
+    /* исчезает и нельзя кликнуть */
+    /* visibility: hidden; */
+}
+.hover-block:hover .hover-block__link {
+    visibility: hidden;
+}
+
+.visited-block__link {
+    color: rgb(14, 13, 13);
+}
+/* если сайт уже посещали */
+.visited-block__link:visited {
+    color: gray;
+}
+
+.last-child-block_item {
+    width: 200px;
+    background-color: darkcyan;
+    padding: 20px;
+    margin:0 20px 20px 0;
+    display: inline-block;
+
+}
+/* .last-child-block_item:last-child {
+    background-color: blue;
+} */
+
+.last-child-block_item:last-of-type {
+    background-color: blue;
+}
+/* меняем стиль у третьего параграфа */
+.nth-child-block p:nth-child(3) {
+    background-color: red;
+}
+.example-1 {
+    font-size: 0;
+}
+.example-1__item {
+    color: violet;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 0 15px;
+    border-right: 2px solid black;
+
+}
+.example-1__item:first-of-type {
+    padding-left: 0;
+}
+.example-1__item:last-of-type {
+    padding-right: 0;
+    border-right: none;
+}
+.example-2 {
+    font-size: 0;
+}
+.exemple-2__item {
+    display: inline-block;
+    width: 10%;
+    height: 60px;
+
+}
+.exemple-2__item:nth-child(even) {
+    background-color: rgb(128, 60, 60);
+}
+
+.fisrt_line_block p::first-line {
+    color: red;
+    font-size: 30px;
+}
+
+.fisrt_letter_block p::first-letter {
+    color: red ;
+    font-size: 60px;
+}
+.before_example_1 p::before, .before_example_1 p::after {
+    content: "слово";
+    color: red;
+    font-size: 5px;
+
+}
+.before_example_2 p {
+    display: inline-block;
+}
+.before_example_2 p::before, .before_example_2 p::after {
+    /* ставит над и под */
+    display: block; 
+    content: "слово";
+    color: red;
+    font-size: 10px;
+    /* ставит по центру */
+    text-align: center;
+}
+/* меняем курсор и отключаем стандартные маркеры */
+.before_example_3 li {
+    list-style-type: none;
+    cursor: pointer;
+}
+/* добавляем маркер слева */
+.before_example_3 li:hover::before {
+    content: "\27A4";
+    margin-right: 6px;
+
+}
+.before_example_4 a, .before_example_5 a {
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+
+}
+
+.before_example_4 a::before {
+    content: url(../images/FOTO.png);
+}
+.before_example_5 a::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/FOTO.png);
+    background-size: cover;
+
+}
+.before_example_6 a {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    line-height: 90px;
+    font-size: 40px;
+    color:rgb(14, 13, 13);
+    text-decoration: none;
+    display: inline-block;
+    background-color: rgb(204, 144, 32);
+    text-align: center;
+    padding-left: 20px;
+    border: 4px solid black;
+}
+.before_example_6 a::after {
+    content: "\279C";
+    display: inline-block;
+    background-color: brown;
+    width: 90px;
+    height: 90px;
+    margin-left: 20px;
+    border-left: 4px solid black;
+    
+}
+.before_example_7 a{
+    font-size: 40px;
+    color: black;
+    text-decoration: none;
+    font-weight: Bold;
+    display: inline-block;
+    transition: ease-in-out 1s;
+
+}
+.before_example_7 a::after {
+    content: "";
+    display: block;
+    height: 5px;
+    width: 0%;
+    background-color: black;
+    transition: ease-in-out 1s;
+    opacity: 0;
+
+}
+
+.before_example_7 a:hover {
+    transform: scale(2);
+    transform: rotate(180deg);
+}
+
+.before_example_7 a:hover::after {
+    /* появляется из не откуда */
+    opacity: 1;
+    width: 75%;
+    background-color: red;
+    con
+}

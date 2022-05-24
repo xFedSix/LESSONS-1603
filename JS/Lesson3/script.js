@@ -121,14 +121,14 @@
 // let result = sum(1, 2);
 // console.log(result);
 
-function checkAge(age) {
-    if (age > 18) {
-      return true;
-    } else {
-      return false;
-    }
-  }
+// function checkAge(age) {
+//     if (age > 18) {
+//       return true;
+//     } else {
+//       return false;
+//     }
+//   }
   
-let ourAge = prompt('Сколько вам лет?', 18);
-let isChecked = checkAge(ourAge);
-console.log(isChecked);
+// let ourAge = prompt('Сколько вам лет?', 18);
+// let isChecked = checkAge(ourAge);
+// console.log(isChecked);

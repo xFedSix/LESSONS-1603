@@ -8,7 +8,7 @@ else if (a === 3) {
     console.log("равно");
 } 
 else {
-    console.log("меньше")
+    console.log("меньше");
 }
 
 // let result = a > 5 ? "more" : a===5 ? "equal" : "less";

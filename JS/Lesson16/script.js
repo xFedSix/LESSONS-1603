@@ -75,7 +75,4 @@ Object.prototype.information = function() {
 // String.prototype.toTag = function(tagName) {
 //     return `<${tagName}>${this}</${tagName}>`
 // }
-// console.log("String".toTag("div"));
-
-
-
+console.log("String".toTag("div"));

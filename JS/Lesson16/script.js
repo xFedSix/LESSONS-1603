@@ -78,3 +78,4 @@ Object.prototype.information = function() {
 // console.log("String".toTag("div"));
 
 
+

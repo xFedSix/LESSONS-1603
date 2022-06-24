@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .container {
     max-width: 1080px;
     margin: 0 auto;
@@ -15,3 +16,22 @@ h1 {
 }
 
 
+=======
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+
+body {
+    font-family: 'Montserrat';
+    background-color: rgb(255, 245, 225);
+}
+
+h1 {
+    text-align: center;
+    padding: 40px 0;
+}
+
+
+>>>>>>> 289d0ee05bcb41871666ae96ced60d49338a483f

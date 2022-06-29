@@ -40,33 +40,47 @@ const bodyElement = document.body
 // firstChild.style.backgroundColor = "red";
 
 
-// const previousSibling = bodyElement.previouElementSibling
-// const nextSibling = bodyElement.nextElementSibling
-// const parent = bodyElement.parentElement
+// // const previousSibling = bodyElement.previouElementSibling
+// // const nextSibling = bodyElement.nextElementSibling
+// // const parent = bodyElement.parentElement
 
-// console.log(previousSibling);
-// console.log(nextSibling);
-// console.log(parent);
+// // console.log(previousSibling);
+// // console.log(nextSibling);
+// // console.log(parent);
 
-const elemOne = document.querySelectorAll(".lesson__list")
-console.log(elemOne);
-const elemTwo = document.querySelectorAll("li")
-console.log(elemTwo);
+// const elemOne = document.querySelectorAll(".lesson__list")
+// console.log(elemOne);
+// const elemTwo = document.querySelectorAll("li")
+// console.log(elemTwo[2]);
 
-const elemThree = document.querySelectorAll("li.lesson__item-list")
-console.log(elemThree);
 
-const elemFour = document.querySelectorAll(".lesson__item>li")
-console.log(elemFour);
+// const elemThree = document.querySelectorAll("li.lesson__item-list")
+// console.log(elemThree);
 
-const elemFive = document.querySelectorAll(".lesson__list .lesson__text")
-console.log(elemFive);
+// const elemFour = document.querySelectorAll(".lesson__item>li")
+// console.log(elemFour);
 
-const elemSix = document.querySelectorAll(".lesson__list, .lesson__text")
-console.log(elemSix);
+// const elemFive = document.querySelectorAll(".lesson__list .lesson__text")
+// console.log(elemFive);
 
-const elemSeven = document.querySelectorAll("#listItem")
-console.log(elemSeven);
+// const elemSix = document.querySelectorAll(".lesson__list, .lesson__text")
+// console.log(elemSix);
 
-const elemEight = document.querySelectorAll("[name]")
-console.log(elemEight);
+// const elemSeven = document.querySelectorAll("#listItem")
+// console.log(elemSeven);
+
+// const elemEight = document.querySelectorAll("[name]")
+// console.log(elemEight);
+
+// const lessonList = document.querySelector(".lesson__list")
+// console.log(lessonList);
+
+// const elem = document.getElementById("listItem")
+// console.log(elem);
+
+const textElement = document.querySelector(".lesson__text")
+console.log(textElement);
+const textElementContent = textElement.innerHTML
+console.log(textElementContent);
+
+textElement.innerHTML = `Another text`;

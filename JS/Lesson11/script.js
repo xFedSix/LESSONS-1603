@@ -208,24 +208,24 @@ console.log(sunSalary(salary));
 // let result = getDate(dateNow);
 // console.log(result);
 
-// const user = {
-//   name: "Ivan",
-//   age: 30,
-//   isAdmin: false,
-//   addres: {
-//     sity: "Minsk",
-//     street: "Kolasa",
-//   }
-// };
+const user = {
+  name: "Ivan",
+  age: 30,
+  isAdmin: false,
+  addres: {
+    sity: "Minsk",
+    street: "Kolasa",
+  }
+};
 
-// let objToJSON = JSON.stringify(user);
-// console.log(objToJSON);
+let objToJSON = JSON.stringify(user);
+console.log(objToJSON);
 
-// let newObject = JSON.parse(objToJSON);
-// console.log(newObject);
+let newObject = JSON.parse(objToJSON);
+console.log(newObject);
 
-// // let fromJSONToObj = JSON.parse(objToJSON);
+// let fromJSONToObj = JSON.parse(objToJSON);
 
-// // console.log(fromJSONToObj);
+// console.log(fromJSONToObj);
 
 // console.log(user === newObject);

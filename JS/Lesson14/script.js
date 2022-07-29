@@ -160,18 +160,18 @@ fetchDataFromBack()
 let arr = {};
 console.log(arr);
 
-// async function fetchDataFromBack() {
-//     try {
-//     const response = await fetch(url);
-//     console.log(response);
-//     const data = await response.json();
-//     return data;
-//     }catch (e) {
-//         console.log(e);
-//     }
+async function fetchDataFromBack() {
+    try {
+    const response = await fetch(url);
+    console.log(response);
+    const data = await response.json();
+    return data;
+    }catch (e) {
+        console.log(e);
+    }
     
-// }
-// fetchDataFromBack();
+}
+fetchDataFromBack();
 
 =======
 // console.log("Запрос данных");
